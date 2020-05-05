@@ -6,3 +6,4 @@
     - apt
     - google_chrome
     - snap
+    - rust

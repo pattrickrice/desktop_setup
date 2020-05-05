@@ -32,4 +32,5 @@ echo "[localhost]
 ansible_connection=local
 "> /etc/ansible/hosts
 
+# ansible-galaxy install -r requirements.yml
 ansible-playbook personal.yml

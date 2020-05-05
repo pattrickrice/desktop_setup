@@ -1,0 +1,7 @@
+- name: Download Rust installation script.
+  get_url:
+    url: https://sh.rustup.rs
+    dest: /tmp/rustup.sh
+
+- name: Install Rust
+  command: bash /tmp/rustup.sh -y
