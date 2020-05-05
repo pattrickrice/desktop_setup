@@ -13,6 +13,7 @@
     state: present
     update_cache: yes
 
+# Used to copy keys to github ssh kegen
 - name: Install xclip
   become: true
   apt:
