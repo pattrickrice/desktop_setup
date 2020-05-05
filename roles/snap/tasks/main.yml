@@ -1,0 +1,5 @@
+- name: Install Google Chrome
+  snap:
+    name:
+      - foo
+      - bar

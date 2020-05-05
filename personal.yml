@@ -1,0 +1,7 @@
+---
+- name: Setup personal desktop
+  hosts: localhost
+  connection: local
+  roles:
+    - apt
+    - google_chrome

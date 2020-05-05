@@ -1,0 +1,23 @@
+- name: Update and upgrade apt packages
+  become: true
+  apt:
+    upgrade: 'yes'
+    update_cache: yes
+    cache_valid_time: 86400 #One day
+    autoremove: yes
+
+- name: Install git
+  become: true
+  apt:
+    name: git
+    state: present
+    update_cache: yes
+
+# Used to copy keys to github ssh kegen
+- name: Install xclip
+  become: true
+  apt:
+    name: xclip
+    state: present
+    update_cache: yes
+
