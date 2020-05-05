@@ -12,3 +12,11 @@
     name: git
     state: present
     update_cache: yes
+
+- name: Install xclip
+  become: true
+  apt:
+    name: xclip
+    state: present
+    update_cache: yes
+
