@@ -5,3 +5,4 @@
   roles:
     - apt
     - google_chrome
+    - snap

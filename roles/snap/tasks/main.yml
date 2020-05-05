@@ -1,5 +1,7 @@
-- name: Install Google Chrome
+- name: Install VS-Code
+  become: true
   snap:
+    classic: yes
+    state: present
     name:
-      - foo
-      - bar
+      - code
