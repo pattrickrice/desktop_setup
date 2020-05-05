@@ -1,7 +1,8 @@
-- name: Install VS-Code
+- name: Install Snaps
   become: true
   snap:
     classic: yes
     state: present
     name:
       - code
+      - vlc
