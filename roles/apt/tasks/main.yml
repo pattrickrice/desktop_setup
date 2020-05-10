@@ -21,3 +21,10 @@
     state: present
     update_cache: yes
 
+- name: Install Silver Searcher
+  become: true
+  apt:
+    name: silversearcher-ag
+    state: present
+    update_cache: yes
+
