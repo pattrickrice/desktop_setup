@@ -1,0 +1,26 @@
+- name: Test for line in bashrc
+  shell: grep "source ~/setup/patrickrc.sh" -i ~/.bashrc
+  register: test_bashrc
+  ignore_errors: yes
+  no_log: True
+  failed_when: false
+
+- name: Test for line in zshrc
+  shell: grep "source ~/setup/patrickrc.sh" -i ~/.zshrc
+  register: test_zshrc
+  ignore_errors: yes
+  no_log: True
+  failed_when: false
+
+- name: add line to bashrc
+  lineinfile:
+    dest: ~/.bashrc
+    line: source ~/setup/patrickrc.sh
+  when: test_bashrc.stdout == ""
+
+- name: add line to zshrc
+  lineinfile:
+    dest: ~/.zshrc
+    line: source ~/setup/patrickrc.sh
+  when: test_zshrc.stdout == ""
+
