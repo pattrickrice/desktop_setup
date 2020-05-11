@@ -12,3 +12,4 @@
     - modify_rc
     - pip
     - docker
+    - make_links

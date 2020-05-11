@@ -1,0 +1,7 @@
+- name: Configure VS-Code settings 
+  file:
+    src: dot_files/.config/settings.json
+    dest: ~/.config/Code/User/settings.json
+    state: hard
+    # will fail if it already exists, so force it
+    force: yes
