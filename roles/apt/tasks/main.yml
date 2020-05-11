@@ -28,3 +28,17 @@
     state: present
     update_cache: yes
 
+- name: Install Fira Code
+  become: true
+  apt:
+    name: fonts-firacode
+    state: present
+    update_cache: yes
+
+- name: Install tmux
+  become: true
+  apt:
+    name: tmux
+    state: present
+    update_cache: yes
+
