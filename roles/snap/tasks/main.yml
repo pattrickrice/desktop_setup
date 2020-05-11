@@ -6,3 +6,7 @@
     name:
       - code
       - vlc
+      - slack
+      - discord
+      - spotify
+      - inkscape
