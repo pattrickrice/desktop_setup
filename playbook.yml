@@ -10,3 +10,5 @@
     - zsh
     - nvm
     - modify_rc
+    - pip
+    - docker

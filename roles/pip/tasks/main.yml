@@ -1,0 +1,8 @@
+# Prefer using virtual environments when possible. Items installed here
+# should generally be global binaries
+
+- name: Install pip packages
+  pip:
+    name: 
+     - virtualenv
+    state: present
