@@ -25,6 +25,7 @@
     state: present
 
 - name: Install global packages.
+  become: true
   yarn:
     name: "{{ item }}"
     global: yes
