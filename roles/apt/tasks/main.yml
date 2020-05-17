@@ -25,6 +25,7 @@
       - software-properties-common
       # end- docker requirements
       - docker-compose
+      - jq
     state: present
     update_cache: yes
 
